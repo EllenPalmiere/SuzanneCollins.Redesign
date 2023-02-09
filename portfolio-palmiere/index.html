@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ellen Palmiere</title>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link href="stylesheet.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<style>
+ .lacrosse {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.additionalinfo {
+    text-align: center;
+}
+.background {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+</style>
+</head>
+<body>
+<div class="container1">
+<div class="logo">
+<img src="pimages/logo.png" alt="logo">
+</div>
+<nav>
+    <div><a href="#home">Home</a></div>
+    <div><a href="#about">About</a></div>
+    <div><a href=#works>Works</a></div>
+    <div><a href=#interview>Interview</a></div>
+
+</nav>
+
+</div>
+<div class="container2" id="works">
+<div class="web1" data-aos="fade-right" data-aos-duration="2000" data-aos-delay="200">
+    <img src="pimages/ballad.png" alt="ballad">
+    <p>Summarize ballad of songbirds here.</p>
+</div>
+<div class="web2" data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="200">
+    <img src="pimages/fire.png" alt="proust">
+    <p>Summarize catching fire here. </p>
+</div>
+<div class="web3" data-aos="zoom-in-down" data-aos-duration="2000" data-aos-delay="200">
+    <img src="pimages/jay.png" alt="discovering">
+    <p>Summarize Mockingjay here. </p>
+</div>
+</div>
+<div class="container3">
+    <div class="single" id="about">
+        <h1>About The Author</h1>
+        <img src="pimages/author.png" alt="camera">
+        <p>Hello, my name is Ellen Palmiere. I'm currently a junior undergrad student at James Madison University and am a part of the Women's D1 lacrosse program here. My major is Media Arts & Design with a concentration in Interactive Design and a minor in Creative Writing. When I'm not balancing school and sports, you can find me reading any Colleen Hoover book or completing a sudoku puzzle. I love problem solving and working with others to create something amazing. Teamwork is something I truly value and believe to be one of the greatest skills someone can have.</p>
+</div>
+    </div>
+
+
+<div class="container4" id="interview">
+    <img src="pimages/internship.png" alt="interview">
+    <div class="internship">
+        <div class="background">
+        <h1>Internships</h1>
+        <p>For summer of 2022 I will be interning for two comapnies: Pro Sport Outlook and Julie Parker Communications. Starting in late may, I will design wall graphics of MLB, NFL, and NBA players along with their records.</p> 
+    </div>
+</div>
+    </div>
+
+    <div class="container5" id="resume">
+<div class="web4" data-aos="fade-right" data-aos-duration="2000" data-aos-delay="200">
+    <img src="pimages/kidsbook.png" alt="wordpress">
+    <p>Talk about children's book here. </p>
+    </div>
+    <div class="web5" data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="200">
+        <h1>"Kids who love adventure books will find this one... hard to put down." -- The Boston Globe</h1>
+    </div>
+    <div class="web6" data-aos="zoom-in-down" data-aos-duration="2000" data-aos-delay="200">
+        <img src="pimages/underland.png" alt="portfolio">
+     <p>Talk about underland chronicles here. </p>
+    </div>
+    </div>
+    <div class="container6">
+        <div class="additionalinfo">
+            <div class="lacrosse">
+            <h1>Newsworthy Quotes</h1>
+            <p>post quotes about Collins books here</p>
+        </div>
+        </div>
+
+    </div>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+AOS.init();
+</script>
+<div><a id="back2Top" title="Back to top" href="#">&#10148;</a></div>
+
+<script>
+/* Scroll to top when arrow up clicked BEGIN */
+$(window).scroll(function() {
+var height = $(window).scrollTop();
+if (height > 100) {
+$('#back2Top').fadeIn();
+} else {
+$('#back2Top').fadeOut();
+}
+});
+$(document).ready(function() {
+$("#back2Top").click(function(event) {
+event.preventDefault();
+$("html, body").animate({ scrollTop: 0 }, "slow");
+return false;
+});
+
+});
+/* Scroll to top when arrow up clicked END */
+</script>
+</body>
+</html>
